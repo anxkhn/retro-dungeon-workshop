@@ -1,5 +1,9 @@
 # Retro Dungeon Workshop
 
+[![CI](https://github.com/anxkhn/retro-dungeon-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/anxkhn/retro-dungeon-workshop/actions/workflows/ci.yml)
+[![Issues](https://img.shields.io/github/issues/anxkhn/retro-dungeon-workshop)](https://github.com/anxkhn/retro-dungeon-workshop/issues)
+[![License](https://img.shields.io/github/license/anxkhn/retro-dungeon-workshop)](LICENSE)
+
 **Educational Repository for Learning Open Source Contributions**
 
 This repository contains intentionally seeded bugs designed to help new contributors learn the open source contribution workflow. It provides a safe, beginner-friendly environment to practice fixing issues, submitting pull requests, and collaborating with maintainers.
