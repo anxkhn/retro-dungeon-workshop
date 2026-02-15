@@ -1,0 +1,15 @@
+---
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 100
+UseTab: Never
+BreakBeforeBraces: Attach
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+IndentCaseLabels: false
+SortIncludes: true
+IncludeBlocks: Preserve
+PointerAlignment: Left
+NamespaceIndentation: None
+FixNamespaceComments: true
+Standard: c++20

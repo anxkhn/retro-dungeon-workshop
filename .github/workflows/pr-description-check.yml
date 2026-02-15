@@ -1,0 +1,27 @@
+name: PR Description Check
+
+on:
+  pull_request:
+
+jobs:
+  check-pr-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR description
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          if [ -z "$PR_BODY" ] || [ "$PR_BODY" = "null" ]; then
+            echo "Error: PR description is empty"
+            echo "Please provide a description of your changes."
+            exit 1
+          fi
+          
+          length=${#PR_BODY}
+          if [ $length -lt 50 ]; then
+            echo "Error: PR description is too short ($length characters)"
+            echo "Please provide a more detailed description (at least 50 characters)."
+            exit 1
+          fi
+          
+          echo "PR description is valid ($length characters)."
