@@ -19,6 +19,19 @@ Retro Dungeon Workshop is a text-based roguelike game that runs entirely in the 
 - **Inventory System** - Collect and manage items including weapons, armor, potions, and treasures
 - **Save/Load System** - Persist your progress and continue your adventure later
 - **Multiple Enemy Types** - Face various enemies with different behaviors and abilities
+## Enemy Types
+
+| Enemy | Symbol | Health | Attack | Defense |
+|-------|--------|--------|--------|---------|
+| Goblin | `g` | 20 | 5 | 2 |
+| Orc | `o` | 40 | 10 | 5 |
+| Skeleton | `s` | 25 | 8 | 3 |
+| Zombie | `z` | 35 | 6 | 8 |
+| Rat | `r` | 5 | 2 | 0 |
+| Spider | `x` | 15 | 6 | 1 |
+| Dragon | `D` | 200 | 30 | 20 |
+
+
 - **Classic Roguelike Mechanics** - Permadeath, procedural generation, and strategic gameplay
 
 ## Learning Objectives
