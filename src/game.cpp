@@ -363,4 +363,15 @@ void Game::renderMessages() {
     }
 }
 
+void Game::showTitleScreen(){
+    std::cout<< "================================" << std::endl;
+    std::cout<< "RETRO DUNGEON WORKSHOP" << std::endl;
+    std::cout<< "A Text-Based Roguelike" <<std::endl;
+    std::cout<< "================================" <<std::endl;
+    std::cout<< "Press Enter to Start..." <<std::endl;
+    std::cout<< "================================" <<std::endl;
+    std::cin.get();
+}
+
+
 }
