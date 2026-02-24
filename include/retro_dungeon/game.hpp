@@ -138,6 +138,8 @@ public:
     void processInput();
     void update();
     void render();
+    void showTitleScreen();
+
     
     void addMessage(const std::string& msg);
     const std::vector<std::string>& getMessages() const { return m_messages; }

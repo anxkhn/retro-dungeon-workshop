@@ -21,10 +21,13 @@ int main(int argc, char* argv[]) {
     if (name.empty()) {
         name = "Adventurer";
     }
+
+    game.showTitleScreen();
     
     game.newGame(name);
     game.run();
     game.render();
+    
     
     std::cout << std::endl;
     std::cout << "Game initialized successfully!" << std::endl;
