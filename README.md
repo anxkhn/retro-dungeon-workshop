@@ -21,6 +21,14 @@ Retro Dungeon Workshop is a text-based roguelike game that runs entirely in the 
 - **Multiple Enemy Types** - Face various enemies with different behaviors and abilities
 - **Classic Roguelike Mechanics** - Permadeath, procedural generation, and strategic gameplay
 
+## Enemy Types
+
+| Symbol | Enemy Type | Difficulty | Description |
+|--------|-----------|------------|-------------|
+| `g` | Goblin | Weak | Low health, low damage - ideal for beginners |
+| `s` | Skeleton | Medium | Moderate health and damage |
+| `x` | Dragon | Boss | High health, high damage - challenging encounter |
+
 ## Learning Objectives
 
 This project helps you learn:
