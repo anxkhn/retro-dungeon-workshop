@@ -350,10 +350,11 @@ void Game::renderUI() {
     
     int y = MAP_HEIGHT + 2;
     std::cout << "\033[" << y << ";1H";
-    std::cout << "Helth: " << m_player->health << "/" << m_player->maxHealth;
+    std::cout << "Health: " << m_player->health << "/" << m_player->maxHealth;
     std::cout << "  Level: " << m_player->level;
     std::cout << "  Gold: " << m_player->gold;
     std::cout << "  Dungeon: " << m_player->dungeonLevel;
+    std::cout << "  Inventory: " << m_player->inventory.size() << "/20";
 }
 
 void Game::renderMessages() {

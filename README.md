@@ -19,6 +19,19 @@ Retro Dungeon Workshop is a text-based roguelike game that runs entirely in the 
 - **Inventory System** - Collect and manage items including weapons, armor, potions, and treasures
 - **Save/Load System** - Persist your progress and continue your adventure later
 - **Multiple Enemy Types** - Face various enemies with different behaviors and abilities
+## Enemy Types
+
+| Enemy | Symbol | Health | Attack | Defense |
+|-------|--------|--------|--------|---------|
+| Goblin | `g` | 20 | 5 | 2 |
+| Orc | `o` | 40 | 10 | 5 |
+| Skeleton | `s` | 25 | 8 | 3 |
+| Zombie | `z` | 35 | 6 | 8 |
+| Rat | `r` | 5 | 2 | 0 |
+| Spider | `x` | 15 | 6 | 1 |
+| Dragon | `D` | 200 | 30 | 20 |
+
+
 - **Classic Roguelike Mechanics** - Permadeath, procedural generation, and strategic gameplay
 
 ## Learning Objectives
@@ -53,6 +66,32 @@ cmake --build build
 
 # Run the game
 ./build/bin/retro_dungeon
+```
+
+## Windows
+
+### Option 1: Visual Studio
+1. Install [Visual Studio 2019 or later](https://visualstudio.microsoft.com/) with "Desktop development with C++" workload
+2. Install [CMake](https://cmake.org/download/)
+3. Open PowerShell and run:
+```powershell
+git clone https://github.com/anxkhn/retro-dungeon-workshop.git
+cd retro-dungeon-workshop
+cmake -B build
+cmake --build build
+.\build\bin\Debug\retro_dungeon.exe
+```
+
+### Option 2: MinGW
+1. Install [MinGW](https://www.mingw-w64.org/)
+2. Install [CMake](https://cmake.org/download/)
+3. Open PowerShell and run:
+```powershell
+git clone https://github.com/anxkhn/retro-dungeon-workshop.git
+cd retro-dungeon-workshop
+cmake -B build -G "MinGW Makefiles"
+cmake --build build
+.\build\bin\retro_dungeon.exe
 ```
 
 ### Installing Dependencies
