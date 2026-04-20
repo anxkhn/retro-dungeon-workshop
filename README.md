@@ -1,5 +1,5 @@
+```markdown
 # Retro Dungeon Workshop
-
 [![CI](https://github.com/anxkhn/retro-dungeon-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/anxkhn/retro-dungeon-workshop/actions/workflows/ci.yml)
 [![Issues](https://img.shields.io/github/issues/anxkhn/retro-dungeon-workshop)](https://github.com/anxkhn/retro-dungeon-workshop/issues)
 [![License](https://img.shields.io/github/license/anxkhn/retro-dungeon-workshop)](LICENSE)
@@ -9,11 +9,9 @@
 This repository contains intentionally seeded bugs designed to help new contributors learn the open source contribution workflow. It provides a safe, beginner-friendly environment to practice fixing issues, submitting pull requests, and collaborating with maintainers.
 
 ## Project Description
-
 Retro Dungeon Workshop is a text-based roguelike game that runs entirely in the terminal. Explore procedurally generated dungeons, battle enemies, collect items, and survive as long as you can in this classic-style adventure game.
 
 ## Features
-
 - **Procedural Dungeon Generation** - Every playthrough generates unique dungeon layouts with rooms, corridors, and hidden areas
 - **Turn-Based Combat** - Strategic combat system with attack, defense, and special abilities
 - **Inventory System** - Collect and manage items including weapons, armor, potions, and treasures
@@ -22,9 +20,7 @@ Retro Dungeon Workshop is a text-based roguelike game that runs entirely in the 
 - **Classic Roguelike Mechanics** - Permadeath, procedural generation, and strategic gameplay
 
 ## Learning Objectives
-
 This project helps you learn:
-
 - The complete open source contribution workflow
 - Git branching and commit practices
 - Code review processes
@@ -33,15 +29,12 @@ This project helps you learn:
 - Working with CMake build systems
 
 ## Quick Start
-
 ### Prerequisites
-
 - CMake 3.28 or higher
 - C++20 compatible compiler (GCC 10+, Clang 10+, or MSVC 2019+)
 - Git
 
-### Build and Run
-
+### Build and Run (Linux / macOS)
 ```bash
 # Clone the repository
 git clone https://github.com/anxkhn/retro-dungeon-workshop.git
@@ -55,14 +48,44 @@ cmake --build build
 ./build/bin/retro_dungeon
 ```
 
-### Installing Dependencies
+### Build and Run (Windows)
+#### Visual Studio (Recommended)
+```powershell
+# Clone the repository
+git clone https://github.com/anxkhn/retro-dungeon-workshop.git
+cd retro-dungeon-workshop
 
+# Configure Visual Studio 2022
+cmake -B build -G "Visual Studio 17 2022"
+
+# Build in Release mode
+cmake --build build --config Release
+
+# Run the game
+.\build\bin\Release\retro_dungeon.exe
+```
+
+#### MinGW (PowerShell)
+```powershell
+# Clone the repository
+git clone https://github.com/anxkhn/retro-dungeon-workshop.git
+cd retro-dungeon-workshop
+
+# Configure MinGW
+cmake -B build -G "MinGW Makefiles"
+
+# Build
+cmake --build build
+
+# Run the game
+.\build\bin\retro_dungeon.exe
+```
+
+### Installing Dependencies
 Catch2 is automatically fetched via CMake FetchContent during the build process. No manual installation required.
 
 ## Using github.dev
-
 github.dev provides a browser-based VS Code environment for quick edits:
-
 1. Navigate to the repository on GitHub
 2. Press `.` (period) or change the URL from `github.com` to `github.dev`
 3. Make your changes directly in the browser
@@ -72,7 +95,6 @@ github.dev provides a browser-based VS Code environment for quick edits:
 This is ideal for small fixes and documentation updates without setting up a local development environment.
 
 ## Project Structure
-
 ```
 retro-dungeon-workshop/
 ├── include/
@@ -96,7 +118,7 @@ retro-dungeon-workshop/
 ```
 
 ## Running Tests
-
+### Linux / macOS
 ```bash
 # Build the project first
 cmake -B build
@@ -112,8 +134,24 @@ cd build && ctest --output-on-failure
 ./build/bin/test_retro_dungeon "[player]"
 ```
 
-## Issue Labels
+### Windows
+#### Visual Studio
+```powershell
+cmake -B build -G "Visual Studio 17 2022"
+cmake --build build --config Release
+cd build
+ctest -C Release --output-on-failure
+```
 
+#### MinGW
+```powershell
+cmake -B build -G "MinGW Makefiles"
+cmake --build build
+cd build
+ctest --output-on-failure
+```
+
+## Issue Labels
 Issues are categorized by difficulty to help you find appropriate challenges:
 
 | Label | Description |
@@ -125,14 +163,12 @@ Issues are categorized by difficulty to help you find appropriate challenges:
 Additional labels include `bug`, `enhancement`, `documentation`, and `help-wanted`.
 
 ## Contributing
-
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
-
 - Setting up your development environment
 - Creating branches and submitting pull requests
 - Code style and testing requirements
 - Commit message conventions
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
